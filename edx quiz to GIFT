@@ -1,0 +1,46 @@
+Je cherche à convertir un fichier qui contient des QCM et QCU dans un format dit "GIFT" sur Moodle pour QCM et QCU.
+
+Un QCM est une question à choix multiple. Dans le format à convertir, on le reconnaît avec des propositions entre crochets :
+[ ]  -> proposition fausse
+[x] -> proposition exacte
+
+Un QCU est une question à choix unique. Dans le format à convertir, on le reconnaît avec des propositions entre parenthèses :
+( ) -> proposition fausse
+(x) -> proposition exacte
+
+Voici la documentation sur le GIFT :
+
+# Symboles
+
+Symboles -> Utilité
+// Texte -> Commentaire jusqu'à la fin de la ligne (optionnel)
+::Titre::	-> Titre de la question (optionnel)
+Texte	-> Texte de la question (devient le titre si aucun titre n'est saisi)
+{	-> Début des réponses -- Sans réponses, le texte est une description de question
+}	-> Fin des réponses
+=Bonne réponse	-> Bonne réponse pour les QCU (c'est = et pas =B)
+~%-50%Mauvaise réponse -> Mauvaise réponse pour les QCU et les QCM
+~%fraction%Bonne réponse -> Bonne réponse pour les QCM. Avec fraction qui est égal au rapport 100 sur le nombre de bonnes propositions (exemple : 100/2 = 50)
+#### -> feedback général
+
+Concernant les mauvaises réponses, si le pourcentage n'est pas un nombre entier (par exemple pour 3 bonnes réponses) il faut écrire le nombre suivi de 5 chiffres après la virgule (le séparateur utilisé doit être le "point" et non la "virgule").
+
+Tu dois aussi prendre en compte la nomenclature, qui figurera à la place de ::Titre::. Cette nomenclature, précisée dans le prompt, comprendra également un compteur de questions : q1, q2, etc. Exemple : ::Nomenclature q1::
+
+Voici les consignes supplémentaires à prendre en compte :
+
+- Assure toi de convertir toutes les questions. Tu t'interrompts souvent avant la dernière question ce qui n'est pas acceptable.
+- Assure toi que les propositions fausses, matérialisées par ( ) pour un QCU et par [ ] pour un QCM soient systématiquement précédées, après le tilde, de %-50%
+- Le feedback général doit être placé avant la fermeture de l'accolade
+- Assure toi de fermer toutes les questions par une accolade fermante, notamment la dernière
+- En aucun cas tu ne dois inventer les questions. Tu dois à tout prix de baser sur les questions qui suivent.
+- Ne met jamais "Bonne réponse" et "Mauvaise réponse" dans le format converti (par exemple après le = de chaque proposition) : c'est complètement idiot.
+
+Voici la nomenclature :
+
+** Nomenclature **
+
+Tu commenceras la numérotation des questions à partir de 1.
+
+Voici les questions, assure toi de toutes les convertir :
+
