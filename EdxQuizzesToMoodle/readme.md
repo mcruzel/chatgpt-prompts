@@ -4,10 +4,10 @@ ChatGPT4
 # What this prompt will do ?
 This prompt will convert EdX Quizz format :
 
-```
+<code>
 For the variable AGE:
 
->>What type of summary represents this variable?<<
+What type of summary represents this variable?
 () Frequencies and Standard error
 (x) Mean and Standard deviation
 
@@ -18,7 +18,7 @@ Age is a continuous variable  with an infinte number of values representing time
 
 For the variable AGE:
 
->>What type of summary represents this variable?<<
+What type of summary represents this variable?
 [] Frequencies and Standard error
 [x] Mean and Standard deviation
 
@@ -26,7 +26,7 @@ For the variable AGE:
 [explanation]
 Age is a continuous variable  with an infinte number of values representing time elapsed from birth date
 [explanation]
-```
+</code>
 
 To Moodle GIFT format.
 
