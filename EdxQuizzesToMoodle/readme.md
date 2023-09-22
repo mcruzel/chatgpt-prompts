@@ -4,7 +4,7 @@ ChatGPT4
 # What this prompt will do ?
 This prompt will convert EdX Quizz format :
 
-	```
+```
 For the variable AGE:
 
 >>What type of summary represents this variable?<<
@@ -26,7 +26,7 @@ For the variable AGE:
 [explanation]
 Age is a continuous variable  with an infinte number of values representing time elapsed from birth date
 [explanation]
- 	```
+```
 
 To Moodle GIFT format.
 
