@@ -2,7 +2,7 @@
 ChatGPT4
 
 # What this prompt will do ?
-This prompt will convert EdX Quizz format :
+This prompt will convert EdX Quiz format :
 
 <code>
 For the variable AGE:
@@ -13,7 +13,7 @@ What type of summary represents this variable?
 
 
 [explanation]
-Age is a continuous variable  with an infinte number of values representing time elapsed from birth date
+Age is a continuous variable  with an infinite number of values representing time elapsed from birth date
 [explanation]
 
 For the variable AGE:
@@ -24,7 +24,7 @@ What type of summary represents this variable?
 
 
 [explanation]
-Age is a continuous variable  with an infinte number of values representing time elapsed from birth date
+Age is a continuous variable  with an infinite number of values representing time elapsed from birth date
 [explanation]
 </code>
 
